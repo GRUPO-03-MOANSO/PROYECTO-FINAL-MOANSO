@@ -67,5 +67,10 @@ namespace CapaPresentación {
         {
             this.Close();
         }
+
+        private void dgv_proveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

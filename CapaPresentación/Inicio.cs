@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames; 
 
 namespace CapaPresentación
 {
@@ -25,6 +26,31 @@ namespace CapaPresentación
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_empleado_inicio_Click(object sender, EventArgs e)
+        {
+            Form FormularioEmpleado = new MantenedorEmpleado();
+            FormularioEmpleado.Show();
+        }
+
+        private void btn_venta_inicio_Click(object sender, EventArgs e)
+        {
+            Form FormularioVenta = new CoreVenta();
+            FormularioVenta.Show();
+        }
+
+        private void btn_cliente_inicio_Click(object sender, EventArgs e)
+        {
+            Form FormularioCliente = new MantenedorCliente();
+            FormularioCliente.Show();
+
+        }
+
+        private void btn_proveedores_inicio_Click(object sender, EventArgs e)
+        {
+            Form FormularioProvedores = new MantenedorProveedores();
+            FormularioProvedores.Show();
         }
     }
 }

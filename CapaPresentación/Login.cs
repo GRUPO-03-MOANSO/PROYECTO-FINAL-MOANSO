@@ -17,30 +17,22 @@ namespace CapaPresentación
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)  {  }
+        private void Boton_entrar_login_Click(object sender, EventArgs e)
+        {
+            Form FormLogin = new Inicio();
+            FormLogin.Show();
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
         {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btn_entrar_login_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_entrar_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void btn_registro_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_salir_Click(object sender, EventArgs e)
-        {
-
+            Form FormLogin = new Inicio();
+            FormLogin.Show();
         }
     }
 }

@@ -29,75 +29,66 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_entrar_login = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(51, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 272);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Location = new System.Drawing.Point(0, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(229, 480);
+            this.panel2.TabIndex = 0;
             // 
-            // panel1
+            // btn_entrar_login
             // 
-            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 562);
-            this.panel1.TabIndex = 9;
+            this.btn_entrar_login.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_entrar_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar_login.Location = new System.Drawing.Point(355, 294);
+            this.btn_entrar_login.Name = "btn_entrar_login";
+            this.btn_entrar_login.Size = new System.Drawing.Size(225, 39);
+            this.btn_entrar_login.TabIndex = 1;
+            this.btn_entrar_login.Text = "Entrar";
+            this.btn_entrar_login.UseVisualStyleBackColor = false;
+            this.btn_entrar_login.Click += new System.EventHandler(this.btn_entrar_login_Click);
             // 
-            // label3
+            // pictureBox2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Subheading", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(524, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(324, 68);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Stac Business";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(21, 135);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(191, 209);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // label1
             // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(513, 270);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(281, 62);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Entrar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(259, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(439, 73);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Stac Business";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 562);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(721, 494);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_entrar_login);
+            this.Controls.Add(this.panel2);
             this.Name = "Login";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.Login_Load_1);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,6 +98,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Boton_entrar_login;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_entrar_login;
+        private System.Windows.Forms.Label label1;
     }
 }

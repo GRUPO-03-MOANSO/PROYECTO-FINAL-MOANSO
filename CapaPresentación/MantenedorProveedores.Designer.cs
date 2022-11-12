@@ -175,6 +175,7 @@
             this.dgv_proveedores.Name = "dgv_proveedores";
             this.dgv_proveedores.Size = new System.Drawing.Size(735, 150);
             this.dgv_proveedores.TabIndex = 11;
+            this.dgv_proveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_proveedores_CellContentClick);
             // 
             // MantenedorProveedores
             // 

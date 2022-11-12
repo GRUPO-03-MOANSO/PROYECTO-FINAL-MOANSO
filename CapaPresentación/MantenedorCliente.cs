@@ -93,12 +93,12 @@ namespace CapaPresentación {
         private void MantenedorCliente_Load(object sender, EventArgs e) { }
         private void dg_muestra_clientesP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow Fila = dg_muestra_clientesP.Rows[e.RowIndex];
-            text_idcliente_clienteP.Text = Fila.Cells[0].Value.ToString();
-            text_nombre_clienteP.Text = Fila.Cells[1].Value.ToString();
-            text_apellidos_clienteP.Text = Fila.Cells[2].Value.ToString();
-            text_tipocliente_clienteP.Text = Fila.Cells[3].Value.ToString();
-            text_dni_clienteP.Text = Fila.Cells[4].Value.ToString();
+            //DataGridViewRow Fila = dg_muestra_clientesP.Rows[e.RowIndex];
+            //text_idcliente_clienteP.Text = Fila.Cells[0].Value.ToString();
+            //text_nombre_clienteP.Text = Fila.Cells[1].Value.ToString();
+            //text_apellidos_clienteP.Text = Fila.Cells[2].Value.ToString();
+            //text_tipocliente_clienteP.Text = Fila.Cells[3].Value.ToString();
+            //text_dni_clienteP.Text = Fila.Cells[4].Value.ToString();
         }
     }
 }
