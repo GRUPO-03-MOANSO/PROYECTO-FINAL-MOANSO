@@ -1,0 +1,17 @@
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.exe.config
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.exe
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.pdb
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaEntidad.dll
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaEntidad.pdb
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.AssemblyReference.cache
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.SuggestedBindingRedirects.cache
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO_FINAL_MOANSO.Form1.resources
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO_FINAL_MOANSO.Properties.Resources.resources
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.GenerateResource.cache
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.CoreCompileInputs.cache
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.CopyComplete
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.exe
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.pdb
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.dll
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.pdb
+C:\Users\newbr\Documents\Documentos visual studio\PROYECTO FINAL MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.dll.config
