@@ -34,7 +34,7 @@ namespace CapaPresentación {
             try
             {
                 string cm = "Insert Ventiña Values('" +  txt_s_productoP.Text + "','" + txt_tipo_pagoP.Text + "','" +
-                   txt_cantidad_P + "','" + txt_fecha_reg_venP + "')";
+                   txt_cantidad_P.Text + "','" + txt_fecha_reg_venP.Text + "')"; 
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand(cm, cn);
                 cn.Open();
@@ -69,16 +69,13 @@ namespace CapaPresentación {
                 MessageBox.Show("Error al Ingresar Datos" + ex);
             }
         }
-
         private void CoreVenta_Load(object sender, EventArgs e)
         {
-
         }
         private void btn_mostrar_ventasP_Click(object sender, EventArgs e)
         {
             mostrar();
         }
-
         private void btn_limpiar_registro_Click(object sender, EventArgs e)
         {
             txt_s_productoP.Text = "";
