@@ -10,3 +10,9 @@ C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntida
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb

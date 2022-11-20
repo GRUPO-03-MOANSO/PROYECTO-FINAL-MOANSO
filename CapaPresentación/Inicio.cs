@@ -52,5 +52,18 @@ namespace CapaPresentación
             Form FormularioProvedores = new MantenedorProveedores();
             FormularioProvedores.Show();
         }
+
+        private void btnSalirInicio_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form FormularioLogin = new Login();
+            FormularioLogin.Show();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            Form FormularioProductos = new MantenedorProductos();
+            FormularioProductos.Show();
+        }
     }
 }

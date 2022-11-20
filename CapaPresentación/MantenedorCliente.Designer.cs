@@ -61,9 +61,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(1, 28);
+            this.panel1.Location = new System.Drawing.Point(1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(849, 71);
+            this.panel1.Size = new System.Drawing.Size(849, 76);
             this.panel1.TabIndex = 0;
             // 
             // label8
@@ -202,7 +202,7 @@
             this.btn_cancelar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_cancelar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_cancelar_clienteM.Location = new System.Drawing.Point(492, 433);
+            this.btn_cancelar_clienteM.Location = new System.Drawing.Point(617, 433);
             this.btn_cancelar_clienteM.Name = "btn_cancelar_clienteM";
             this.btn_cancelar_clienteM.Size = new System.Drawing.Size(94, 34);
             this.btn_cancelar_clienteM.TabIndex = 13;
@@ -215,7 +215,7 @@
             this.btn_editar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_editar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_editar_clienteM.Location = new System.Drawing.Point(635, 433);
+            this.btn_editar_clienteM.Location = new System.Drawing.Point(485, 433);
             this.btn_editar_clienteM.Name = "btn_editar_clienteM";
             this.btn_editar_clienteM.Size = new System.Drawing.Size(100, 34);
             this.btn_editar_clienteM.TabIndex = 14;
@@ -310,7 +310,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenedorCliente";
             this.Load += new System.EventHandler(this.MantenedorCliente_Load);
             this.panel1.ResumeLayout(false);

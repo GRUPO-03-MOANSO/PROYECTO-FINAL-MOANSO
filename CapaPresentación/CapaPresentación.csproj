@@ -251,6 +251,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProductos.Designer.cs">
+      <DependentUpon>MantenedorProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorEmpleado.resx">
       <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProductos.resx">
+      <DependentUpon>MantenedorProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedores.resx">
       <DependentUpon>MantenedorProveedores.cs</DependentUpon>

@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_entrar_login = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_entrar_login = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSalirLogin = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -41,22 +42,10 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(0, 12);
+            this.panel2.Location = new System.Drawing.Point(0, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(229, 480);
+            this.panel2.Size = new System.Drawing.Size(229, 498);
             this.panel2.TabIndex = 0;
-            // 
-            // btn_entrar_login
-            // 
-            this.btn_entrar_login.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_entrar_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar_login.Location = new System.Drawing.Point(355, 294);
-            this.btn_entrar_login.Name = "btn_entrar_login";
-            this.btn_entrar_login.Size = new System.Drawing.Size(225, 39);
-            this.btn_entrar_login.TabIndex = 1;
-            this.btn_entrar_login.Text = "Entrar";
-            this.btn_entrar_login.UseVisualStyleBackColor = false;
-            this.btn_entrar_login.Click += new System.EventHandler(this.btn_entrar_login_Click);
             // 
             // pictureBox2
             // 
@@ -67,6 +56,18 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            // 
+            // btn_entrar_login
+            // 
+            this.btn_entrar_login.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btn_entrar_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_entrar_login.Location = new System.Drawing.Point(355, 229);
+            this.btn_entrar_login.Name = "btn_entrar_login";
+            this.btn_entrar_login.Size = new System.Drawing.Size(225, 39);
+            this.btn_entrar_login.TabIndex = 1;
+            this.btn_entrar_login.Text = "Entrar";
+            this.btn_entrar_login.UseVisualStyleBackColor = false;
+            this.btn_entrar_login.Click += new System.EventHandler(this.btn_entrar_login_Click);
             // 
             // label1
             // 
@@ -79,13 +80,28 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Stac Business";
             // 
+            // btnSalirLogin
+            // 
+            this.btnSalirLogin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSalirLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirLogin.Location = new System.Drawing.Point(355, 443);
+            this.btnSalirLogin.Name = "btnSalirLogin";
+            this.btnSalirLogin.Size = new System.Drawing.Size(225, 39);
+            this.btnSalirLogin.TabIndex = 3;
+            this.btnSalirLogin.Text = "Salir";
+            this.btnSalirLogin.UseVisualStyleBackColor = false;
+            this.btnSalirLogin.Click += new System.EventHandler(this.btnSalirLogin_Click);
+            // 
             // Login
             // 
             this.ClientSize = new System.Drawing.Size(721, 494);
+            this.Controls.Add(this.btnSalirLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_entrar_login);
             this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Login_Load_1);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -103,5 +119,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_entrar_login;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSalirLogin;
     }
 }

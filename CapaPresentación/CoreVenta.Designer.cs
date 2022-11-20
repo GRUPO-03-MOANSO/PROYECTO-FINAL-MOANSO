@@ -137,9 +137,9 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1, 12);
+            this.panel2.Location = new System.Drawing.Point(1, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1060, 69);
+            this.panel2.Size = new System.Drawing.Size(1060, 66);
             this.panel2.TabIndex = 10;
             // 
             // label3
@@ -268,8 +268,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_registrar_core);
             this.Controls.Add(this.btn_salir_core);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CoreVenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CoreVenta";
             this.Load += new System.EventHandler(this.CoreVenta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

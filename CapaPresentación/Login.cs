@@ -33,6 +33,12 @@ namespace CapaPresentación
         {
             Form FormLogin = new Inicio();
             FormLogin.Show();
+            this.Hide();
+        }
+
+        private void btnSalirLogin_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
