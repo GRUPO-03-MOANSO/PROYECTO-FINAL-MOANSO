@@ -63,6 +63,7 @@ namespace CapaPresentación
 
         private void btnMostrarEmpleado_Click(object sender, EventArgs e)
         {
+            //Iniciando Conexion con la Base de Datos
             SqlConnection cn = Conexion.Instancia.Conectar();
             SqlCommand comando = new SqlCommand("Select * from Empleados", cn);
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -71,7 +72,7 @@ namespace CapaPresentación
             adapter.Fill(tabla);
             dgvEmpleado.DataSource = tabla;
         }
-
+        
         private void btnModificarEmpleado_Click(object sender, EventArgs e)
         {
             try
