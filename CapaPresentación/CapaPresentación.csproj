@@ -251,6 +251,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorMantenimiento.Designer.cs">
+      <DependentUpon>MantenedorMantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,12 @@
     </Compile>
     <Compile Include="MantenedorProveedores.Designer.cs">
       <DependentUpon>MantenedorProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorReserva.Designer.cs">
+      <DependentUpon>MantenedorReserva.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -283,11 +295,17 @@
     <EmbeddedResource Include="MantenedorEmpleado.resx">
       <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorMantenimiento.resx">
+      <DependentUpon>MantenedorMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProductos.resx">
       <DependentUpon>MantenedorProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProveedores.resx">
       <DependentUpon>MantenedorProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorReserva.resx">
+      <DependentUpon>MantenedorReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

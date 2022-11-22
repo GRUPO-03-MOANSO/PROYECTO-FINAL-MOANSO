@@ -44,6 +44,8 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="datEmpleado.cs" />
+    <Compile Include="datMantenimiento.cs" />
+    <Compile Include="datReserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

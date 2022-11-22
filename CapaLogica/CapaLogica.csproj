@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="logEmpleado.cs" />
+    <Compile Include="logMantenimiento.cs" />
+    <Compile Include="logReserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

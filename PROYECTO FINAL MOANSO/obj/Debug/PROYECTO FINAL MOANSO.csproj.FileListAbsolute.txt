@@ -66,3 +66,20 @@ C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\PROYECT
 C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.CopyComplete
 C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.exe
 C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.pdb
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.exe.config
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.exe
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\PROYECTO FINAL MOANSO.pdb
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaEntidad.dll
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.dll
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaEntidad.pdb
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.pdb
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\bin\Debug\CapaPresentación.dll.config
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.AssemblyReference.cache
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.SuggestedBindingRedirects.cache
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO_FINAL_MOANSO.Form1.resources
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO_FINAL_MOANSO.Properties.Resources.resources
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.GenerateResource.cache
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.CoreCompileInputs.cache
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.csproj.CopyComplete
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.exe
+C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\PROYECTO FINAL MOANSO\obj\Debug\PROYECTO FINAL MOANSO.pdb
