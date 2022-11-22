@@ -46,6 +46,7 @@
     <Compile Include="datCliente.cs" />
     <Compile Include="datEmpleado.cs" />
     <Compile Include="datMantenimiento.cs" />
+    <Compile Include="datProveedor.cs" />
     <Compile Include="datReserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

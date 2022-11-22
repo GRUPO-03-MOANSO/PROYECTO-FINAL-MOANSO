@@ -317,3 +317,5 @@ C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaPresentación\ob
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorMantenimiento.resources
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorProductos.resources
 C:\Users\HectorPc\Desktop\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorReserva.resources
+C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorMantenimiento.resources
+C:\Users\newbr\Documents\Proyectos\Proyecto Moanso\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorReserva.resources

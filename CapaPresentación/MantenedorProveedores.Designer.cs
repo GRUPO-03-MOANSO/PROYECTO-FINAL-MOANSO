@@ -35,13 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tex_id_proovedorP = new System.Windows.Forms.TextBox();
-            this.tex_nombre_proovedorP = new System.Windows.Forms.TextBox();
-            this.tex_tipoproducto_proovedorP = new System.Windows.Forms.TextBox();
-            this.btn_ingresar_proovedorP = new System.Windows.Forms.Button();
-            this.btn_mostrar_proovedorP = new System.Windows.Forms.Button();
-            this.btn_cerrar_proovedorP = new System.Windows.Forms.Button();
+            this.txt_idproveedor = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
+            this.btn_ingresar = new System.Windows.Forms.Button();
+            this.btn_mostrar = new System.Windows.Forms.Button();
+            this.btn_cerrar = new System.Windows.Forms.Button();
             this.dgv_proveedores = new System.Windows.Forms.DataGridView();
+            this.btn_editar = new System.Windows.Forms.Button();
+            this.cbx_tipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).BeginInit();
@@ -117,71 +118,65 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Tipo de Productos :";
             // 
-            // tex_id_proovedorP
+            // txt_idproveedor
             // 
-            this.tex_id_proovedorP.Location = new System.Drawing.Point(524, 177);
-            this.tex_id_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.tex_id_proovedorP.Name = "tex_id_proovedorP";
-            this.tex_id_proovedorP.Size = new System.Drawing.Size(389, 22);
-            this.tex_id_proovedorP.TabIndex = 5;
+            this.txt_idproveedor.Location = new System.Drawing.Point(524, 177);
+            this.txt_idproveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_idproveedor.Name = "txt_idproveedor";
+            this.txt_idproveedor.Size = new System.Drawing.Size(135, 22);
+            this.txt_idproveedor.TabIndex = 5;
+            this.txt_idproveedor.TextChanged += new System.EventHandler(this.txt_idproveedor_TextChanged);
             // 
-            // tex_nombre_proovedorP
+            // txt_nombre
             // 
-            this.tex_nombre_proovedorP.Location = new System.Drawing.Point(524, 265);
-            this.tex_nombre_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.tex_nombre_proovedorP.Name = "tex_nombre_proovedorP";
-            this.tex_nombre_proovedorP.Size = new System.Drawing.Size(389, 22);
-            this.tex_nombre_proovedorP.TabIndex = 6;
+            this.txt_nombre.Location = new System.Drawing.Point(524, 265);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.Size = new System.Drawing.Size(389, 22);
+            this.txt_nombre.TabIndex = 6;
+            this.txt_nombre.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
-            // tex_tipoproducto_proovedorP
+            // btn_ingresar
             // 
-            this.tex_tipoproducto_proovedorP.Location = new System.Drawing.Point(524, 362);
-            this.tex_tipoproducto_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.tex_tipoproducto_proovedorP.Name = "tex_tipoproducto_proovedorP";
-            this.tex_tipoproducto_proovedorP.Size = new System.Drawing.Size(389, 22);
-            this.tex_tipoproducto_proovedorP.TabIndex = 7;
+            this.btn_ingresar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_ingresar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_ingresar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_ingresar.Location = new System.Drawing.Point(480, 412);
+            this.btn_ingresar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_ingresar.Name = "btn_ingresar";
+            this.btn_ingresar.Size = new System.Drawing.Size(129, 44);
+            this.btn_ingresar.TabIndex = 8;
+            this.btn_ingresar.Text = "Ingresar";
+            this.btn_ingresar.UseVisualStyleBackColor = false;
+            this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_proovedorP_Click);
             // 
-            // btn_ingresar_proovedorP
+            // btn_mostrar
             // 
-            this.btn_ingresar_proovedorP.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_ingresar_proovedorP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_ingresar_proovedorP.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_ingresar_proovedorP.Location = new System.Drawing.Point(524, 412);
-            this.btn_ingresar_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ingresar_proovedorP.Name = "btn_ingresar_proovedorP";
-            this.btn_ingresar_proovedorP.Size = new System.Drawing.Size(129, 44);
-            this.btn_ingresar_proovedorP.TabIndex = 8;
-            this.btn_ingresar_proovedorP.Text = "Agregar";
-            this.btn_ingresar_proovedorP.UseVisualStyleBackColor = false;
-            this.btn_ingresar_proovedorP.Click += new System.EventHandler(this.btn_ingresar_proovedorP_Click);
+            this.btn_mostrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_mostrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_mostrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_mostrar.Location = new System.Drawing.Point(797, 412);
+            this.btn_mostrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mostrar.Name = "btn_mostrar";
+            this.btn_mostrar.Size = new System.Drawing.Size(116, 44);
+            this.btn_mostrar.TabIndex = 9;
+            this.btn_mostrar.Text = "Mostrar";
+            this.btn_mostrar.UseVisualStyleBackColor = false;
+            this.btn_mostrar.Click += new System.EventHandler(this.btn_mostrar_proovedorP_Click);
             // 
-            // btn_mostrar_proovedorP
+            // btn_cerrar
             // 
-            this.btn_mostrar_proovedorP.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_mostrar_proovedorP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_mostrar_proovedorP.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_mostrar_proovedorP.Location = new System.Drawing.Point(705, 412);
-            this.btn_mostrar_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_mostrar_proovedorP.Name = "btn_mostrar_proovedorP";
-            this.btn_mostrar_proovedorP.Size = new System.Drawing.Size(116, 44);
-            this.btn_mostrar_proovedorP.TabIndex = 9;
-            this.btn_mostrar_proovedorP.Text = "Mostrar";
-            this.btn_mostrar_proovedorP.UseVisualStyleBackColor = false;
-            this.btn_mostrar_proovedorP.Click += new System.EventHandler(this.btn_mostrar_proovedorP_Click);
-            // 
-            // btn_cerrar_proovedorP
-            // 
-            this.btn_cerrar_proovedorP.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_cerrar_proovedorP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_cerrar_proovedorP.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_cerrar_proovedorP.Location = new System.Drawing.Point(879, 412);
-            this.btn_cerrar_proovedorP.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_cerrar_proovedorP.Name = "btn_cerrar_proovedorP";
-            this.btn_cerrar_proovedorP.Size = new System.Drawing.Size(129, 44);
-            this.btn_cerrar_proovedorP.TabIndex = 10;
-            this.btn_cerrar_proovedorP.Text = "Cerrar";
-            this.btn_cerrar_proovedorP.UseVisualStyleBackColor = false;
-            this.btn_cerrar_proovedorP.Click += new System.EventHandler(this.btn_cerrar_proovedorP_Click);
+            this.btn_cerrar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_cerrar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_cerrar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_cerrar.Location = new System.Drawing.Point(941, 412);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(129, 44);
+            this.btn_cerrar.TabIndex = 10;
+            this.btn_cerrar.Text = "Cerrar";
+            this.btn_cerrar.UseVisualStyleBackColor = false;
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_proovedorP_Click);
             // 
             // dgv_proveedores
             // 
@@ -194,18 +189,45 @@
             this.dgv_proveedores.TabIndex = 11;
             this.dgv_proveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_proveedores_CellContentClick);
             // 
+            // btn_editar
+            // 
+            this.btn_editar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_editar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_editar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_editar.Location = new System.Drawing.Point(646, 412);
+            this.btn_editar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_editar.Name = "btn_editar";
+            this.btn_editar.Size = new System.Drawing.Size(116, 44);
+            this.btn_editar.TabIndex = 12;
+            this.btn_editar.Text = "Editar";
+            this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
+            // 
+            // cbx_tipo
+            // 
+            this.cbx_tipo.FormattingEnabled = true;
+            this.cbx_tipo.Items.AddRange(new object[] {
+            "Terma Solar",
+            "Panel Solar"});
+            this.cbx_tipo.Location = new System.Drawing.Point(525, 362);
+            this.cbx_tipo.Name = "cbx_tipo";
+            this.cbx_tipo.Size = new System.Drawing.Size(260, 24);
+            this.cbx_tipo.TabIndex = 13;
+            this.cbx_tipo.SelectedIndexChanged += new System.EventHandler(this.cbx_tipo_SelectedIndexChanged);
+            // 
             // MantenedorProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1083, 753);
+            this.Controls.Add(this.cbx_tipo);
+            this.Controls.Add(this.btn_editar);
             this.Controls.Add(this.dgv_proveedores);
-            this.Controls.Add(this.btn_cerrar_proovedorP);
-            this.Controls.Add(this.btn_mostrar_proovedorP);
-            this.Controls.Add(this.btn_ingresar_proovedorP);
-            this.Controls.Add(this.tex_tipoproducto_proovedorP);
-            this.Controls.Add(this.tex_nombre_proovedorP);
-            this.Controls.Add(this.tex_id_proovedorP);
+            this.Controls.Add(this.btn_cerrar);
+            this.Controls.Add(this.btn_mostrar);
+            this.Controls.Add(this.btn_ingresar);
+            this.Controls.Add(this.txt_nombre);
+            this.Controls.Add(this.txt_idproveedor);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -233,13 +255,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tex_id_proovedorP;
-        private System.Windows.Forms.TextBox tex_nombre_proovedorP;
-        private System.Windows.Forms.TextBox tex_tipoproducto_proovedorP;
-        private System.Windows.Forms.Button btn_ingresar_proovedorP;
-        private System.Windows.Forms.Button btn_mostrar_proovedorP;
-        private System.Windows.Forms.Button btn_cerrar_proovedorP;
+        private System.Windows.Forms.TextBox txt_idproveedor;
+        private System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Button btn_ingresar;
+        private System.Windows.Forms.Button btn_mostrar;
+        private System.Windows.Forms.Button btn_cerrar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgv_proveedores;
+        private System.Windows.Forms.Button btn_editar;
+        private System.Windows.Forms.ComboBox cbx_tipo;
     }
 }
