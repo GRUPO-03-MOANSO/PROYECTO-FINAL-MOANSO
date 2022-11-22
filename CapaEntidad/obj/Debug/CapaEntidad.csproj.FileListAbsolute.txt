@@ -28,3 +28,9 @@ C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.cs
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb

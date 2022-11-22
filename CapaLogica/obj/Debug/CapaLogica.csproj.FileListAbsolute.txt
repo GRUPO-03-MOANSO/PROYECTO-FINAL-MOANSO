@@ -53,3 +53,14 @@ C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.cspr
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\jhose\Pfinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\HectorPc\Desktop\Clonacionxd\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.pdb
