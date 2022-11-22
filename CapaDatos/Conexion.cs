@@ -15,7 +15,7 @@ namespace CapaDatos {
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=ELPEPE; Initial Catalog = ProyectoMoanso;" +
+            cn.ConnectionString = "Data Source=DESKTOP-P0R3OO8; Initial Catalog = ProyectoMoanso;" +
                                 "Integrated Security=true";
             return cn;
         }

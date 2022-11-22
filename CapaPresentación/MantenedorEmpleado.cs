@@ -112,10 +112,16 @@ namespace CapaPresentación
         {
             txtCodigoEmpleado.Text = "";
             txtNombreEmpleado.Text = "";
+            txtTelefonoEmpleado.Text = "";
             txtApellidoEmpleado.Text = "";
             txtDireccionEmpleado.Text = "";
             txtEmailEmpleado.Text = "";
             cboSexo.Text = "";
+        }
+
+        private void cboSexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

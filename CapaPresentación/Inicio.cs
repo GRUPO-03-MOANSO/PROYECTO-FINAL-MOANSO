@@ -65,5 +65,10 @@ namespace CapaPresentación
             Form FormularioProductos = new MantenedorProductos();
             FormularioProductos.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

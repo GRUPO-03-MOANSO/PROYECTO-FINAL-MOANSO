@@ -55,7 +55,9 @@ namespace CapaPresentación {
         }
         private void btn_salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Dispose();
+
         }
         private void btn_registrar_Click(object sender, EventArgs e)
         {
@@ -83,6 +85,11 @@ namespace CapaPresentación {
             txt_idventas_P.Text = "";
             txt_cantidad_P.Text = "";
             txt_fecha_reg_venP.Text = "";
+        }
+
+        private void txt_s_productoP_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

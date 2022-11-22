@@ -48,7 +48,7 @@ namespace CapaPresentación {
         }
         private void btn_cancelar_clienteM_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Dispose();
         }
         private void btn_agregar_clienteM_Click(object sender, EventArgs e)
         {
@@ -99,6 +99,11 @@ namespace CapaPresentación {
             //text_apellidos_clienteP.Text = Fila.Cells[2].Value.ToString();
             //text_tipocliente_clienteP.Text = Fila.Cells[3].Value.ToString();
             //text_dni_clienteP.Text = Fila.Cells[4].Value.ToString();
+        }
+
+        private void cbm_sexo_clienteP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

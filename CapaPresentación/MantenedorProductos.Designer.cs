@@ -40,10 +40,12 @@
             // btnAtrasProductos
             // 
             this.btnAtrasProductos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAtrasProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtrasProductos.Location = new System.Drawing.Point(422, 342);
+            this.btnAtrasProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAtrasProductos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAtrasProductos.Location = new System.Drawing.Point(563, 421);
+            this.btnAtrasProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAtrasProductos.Name = "btnAtrasProductos";
-            this.btnAtrasProductos.Size = new System.Drawing.Size(127, 57);
+            this.btnAtrasProductos.Size = new System.Drawing.Size(169, 70);
             this.btnAtrasProductos.TabIndex = 15;
             this.btnAtrasProductos.Text = "Regresar";
             this.btnAtrasProductos.UseVisualStyleBackColor = false;
@@ -53,19 +55,23 @@
             // 
             this.dgvListadoProductos.AllowUserToOrderColumns = true;
             this.dgvListadoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListadoProductos.Location = new System.Drawing.Point(12, 112);
+            this.dgvListadoProductos.Location = new System.Drawing.Point(16, 138);
+            this.dgvListadoProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvListadoProductos.Name = "dgvListadoProductos";
-            this.dgvListadoProductos.Size = new System.Drawing.Size(379, 450);
+            this.dgvListadoProductos.RowHeadersWidth = 51;
+            this.dgvListadoProductos.Size = new System.Drawing.Size(505, 554);
             this.dgvListadoProductos.TabIndex = 14;
             this.dgvListadoProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListadoProductos_CellContentClick);
             // 
             // btnMostrarProductos
             // 
             this.btnMostrarProductos.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnMostrarProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarProductos.Location = new System.Drawing.Point(422, 212);
+            this.btnMostrarProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMostrarProductos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMostrarProductos.Location = new System.Drawing.Point(563, 261);
+            this.btnMostrarProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMostrarProductos.Name = "btnMostrarProductos";
-            this.btnMostrarProductos.Size = new System.Drawing.Size(127, 54);
+            this.btnMostrarProductos.Size = new System.Drawing.Size(169, 66);
             this.btnMostrarProductos.TabIndex = 13;
             this.btnMostrarProductos.Text = "Mostrar";
             this.btnMostrarProductos.UseVisualStyleBackColor = false;
@@ -76,9 +82,10 @@
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Location = new System.Drawing.Point(-55, -1);
+            this.panel1.Location = new System.Drawing.Point(-73, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(911, 92);
+            this.panel1.Size = new System.Drawing.Size(1215, 113);
             this.panel1.TabIndex = 12;
             // 
             // label4
@@ -86,22 +93,24 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Subheading", 22.2F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(192, 25);
+            this.label4.Location = new System.Drawing.Point(256, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(309, 43);
+            this.label4.Size = new System.Drawing.Size(382, 53);
             this.label4.TabIndex = 0;
             this.label4.Text = "Listado de Productos";
             // 
             // MantenedorProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 574);
+            this.ClientSize = new System.Drawing.Size(781, 706);
             this.Controls.Add(this.btnAtrasProductos);
             this.Controls.Add(this.dgvListadoProductos);
             this.Controls.Add(this.btnMostrarProductos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenedorProductos";

@@ -60,8 +60,9 @@
             // btn_entrar_login
             // 
             this.btn_entrar_login.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btn_entrar_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar_login.Location = new System.Drawing.Point(355, 229);
+            this.btn_entrar_login.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_entrar_login.ForeColor = System.Drawing.Color.Snow;
+            this.btn_entrar_login.Location = new System.Drawing.Point(349, 231);
             this.btn_entrar_login.Name = "btn_entrar_login";
             this.btn_entrar_login.Size = new System.Drawing.Size(225, 39);
             this.btn_entrar_login.TabIndex = 1;
@@ -72,19 +73,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(259, 66);
+            this.label1.Location = new System.Drawing.Point(302, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(439, 73);
+            this.label1.Size = new System.Drawing.Size(414, 87);
             this.label1.TabIndex = 2;
             this.label1.Text = "Stac Business";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSalirLogin
             // 
             this.btnSalirLogin.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSalirLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirLogin.Location = new System.Drawing.Point(355, 443);
+            this.btnSalirLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSalirLogin.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnSalirLogin.Location = new System.Drawing.Point(349, 446);
             this.btnSalirLogin.Name = "btnSalirLogin";
             this.btnSalirLogin.Size = new System.Drawing.Size(225, 39);
             this.btnSalirLogin.TabIndex = 3;
@@ -94,7 +97,7 @@
             // 
             // Login
             // 
-            this.ClientSize = new System.Drawing.Size(721, 494);
+            this.ClientSize = new System.Drawing.Size(813, 497);
             this.Controls.Add(this.btnSalirLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_entrar_login);
