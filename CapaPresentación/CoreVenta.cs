@@ -55,7 +55,7 @@ namespace CapaPresentación {
 
         }
         private void CoreVenta_Load(object sender, EventArgs e)
-        { 
+        {   
         }
         private void btn_mostrar_ventasP_Click(object sender, EventArgs e)
         {

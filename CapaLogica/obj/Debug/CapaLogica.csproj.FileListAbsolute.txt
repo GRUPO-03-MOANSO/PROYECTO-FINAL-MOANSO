@@ -75,3 +75,14 @@ C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaLogica\obj
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaLogica\obj\Debug\CapaLogica.pdb

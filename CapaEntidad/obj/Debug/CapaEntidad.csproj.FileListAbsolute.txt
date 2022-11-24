@@ -40,3 +40,9 @@ C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaEntidad\ob
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\HectorPc\Desktop\Nueva carpeta (2)\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaEntidad\obj\Debug\CapaEntidad.pdb

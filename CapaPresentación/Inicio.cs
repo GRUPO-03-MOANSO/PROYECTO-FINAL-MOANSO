@@ -70,5 +70,17 @@ namespace CapaPresentación
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form FormularioMantenimiento = new MantenedorMantenimiento();
+            FormularioMantenimiento.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form FormularioReserva = new MantenedorReserva();
+            FormularioReserva.Show();
+        }
     }
 }
