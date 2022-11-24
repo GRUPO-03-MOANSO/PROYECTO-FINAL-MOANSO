@@ -48,6 +48,7 @@
     <Compile Include="datMantenimiento.cs" />
     <Compile Include="datProveedor.cs" />
     <Compile Include="datReserva.cs" />
+    <Compile Include="datVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

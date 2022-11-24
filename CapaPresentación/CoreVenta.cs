@@ -1,4 +1,6 @@
 ﻿using CapaDatos;
+using CapaEntidad;
+using CapaLogica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +16,7 @@ namespace CapaPresentación {
         public CoreVenta()
         {
             InitializeComponent();
+            listarVentas();
         }
         private void label3_Click(object sender, EventArgs e)  { }
 
@@ -25,37 +28,10 @@ namespace CapaPresentación {
             adapter.SelectCommand = comando;
             DataTable tabla = new DataTable();
             adapter.Fill(tabla);
-            panel_venta_p.DataSource = tabla;
-        }
-        private void Inserta()
-        {
-            SqlCommand cmd = null;
-            Boolean inserta = false;
-            try
-            {
-                string cm = "Insert Ventiña Values('" +  txt_s_productoP.Text + "','" + txt_tipo_pagoP.Text + "','" +
-                   txt_cantidad_P.Text + "','" + txt_fecha_reg_venP.Text + "')"; 
-                SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand(cm, cn);
-                cn.Open();
-                int i = cmd.ExecuteNonQuery();
-                if (i > 0)
-                {
-                    inserta = true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                cmd.Connection.Close();
-            }
+            dgv_ventas.DataSource = tabla;
         }
         private void btn_salir_Click(object sender, EventArgs e)
         {
-            //this.Close();
             Dispose();
 
         }
@@ -63,28 +39,51 @@ namespace CapaPresentación {
         {
             try
             {
-                Inserta();
-                mostrar();
+                entVenta venta = new entVenta();
+                venta.id_ventas = Convert.ToInt32(txt_idventas_P.Text);
+                venta.cantidad = Convert.ToInt32(txt_cantidad_P.Text);
+                venta.id_producto = cb_producto.SelectedIndex;
+                venta.tipo_pago = cb_tipopago.Text;
+                venta.fecha_venta = Convert.ToDateTime(dtp_fecha.Value);
+                logVenta.Instancia.InsertaVenta(venta);
+                listarVentas();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al Ingresar Datos" + ex);
             }
+
         }
         private void CoreVenta_Load(object sender, EventArgs e)
-        {
+        { 
         }
         private void btn_mostrar_ventasP_Click(object sender, EventArgs e)
         {
-            mostrar();
+            listarVentas();
+        }
+        private void listarVentas()
+        {
+            dgv_ventas.DataSource = logVenta.Instancia.ListaVentas();
+            cb_producto.DataSource = productos_cb();
+            cb_producto.DisplayMember = "nombreProducto";
+            cb_producto.ValueMember = "idProducto";
+        }
+        private DataTable productos_cb()
+        {
+            SqlConnection cn = Conexion.Instancia.Conectar();
+            SqlCommand comando = new SqlCommand("Select * from Productos", cn);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = comando;
+            DataTable tabla = new DataTable();
+            adapter.Fill(tabla);
+            return tabla;
         }
         private void btn_limpiar_registro_Click(object sender, EventArgs e)
         {
-            txt_s_productoP.Text = "";
-            txt_tipo_pagoP.Text = "";
+            cb_producto.SelectedIndex = -1;
+            cb_tipopago.SelectedIndex = -1;
             txt_idventas_P.Text = "";
             txt_cantidad_P.Text = "";
-            txt_fecha_reg_venP.Text = "";
         }
 
         private void txt_s_productoP_TextChanged(object sender, EventArgs e)
