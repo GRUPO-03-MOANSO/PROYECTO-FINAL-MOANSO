@@ -123,5 +123,10 @@ namespace CapaPresentación
         {
 
         }
+
+        private void MantenedorEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
