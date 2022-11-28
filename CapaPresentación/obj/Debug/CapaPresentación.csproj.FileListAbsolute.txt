@@ -429,3 +429,5 @@ C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\C
 C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.csproj.CopyComplete
 C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.dll
 C:\Users\jhose\ProyectoFinal\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.pdb
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorMantenimiento.resources
+C:\Users\Jose\Desktop\ProyectoMoanso\PROYECTO-FINAL-MOANSO\CapaPresentación\obj\Debug\CapaPresentación.MantenedorReserva.resources

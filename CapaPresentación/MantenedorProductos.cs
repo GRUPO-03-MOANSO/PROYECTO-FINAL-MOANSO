@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using CapaDatos;
+using CapaEntidad;
+using CapaLogica;
 
 namespace CapaPresentación
 {
@@ -42,6 +44,41 @@ namespace CapaPresentación
         private void btnAtrasProductos_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            entProductos Pro = new entProductos();
+            Pro.idProducto = int.Parse(txtIdProducto.Text.Trim());
+            Pro.nombreProducto = txtNombreProducto.Text.Trim();
+            Pro.stockProducto = int.Parse(txtStockProducto.Text.Trim());
+            Pro.precioPro = int.Parse(txtPrecioProducto.Text.Trim());
+            logProductos.Instancia.EliminaProductos(Pro);
+        }
+
+        private void dgvListadoProductos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvListadoProductos.Rows[e.RowIndex];
+            txtIdProducto.Text = filaActual.Cells[0].Value.ToString();
+            txtNombreProducto.Text = filaActual.Cells[1].Value.ToString();
+            txtStockProducto.Text = filaActual.Cells[2].Value.ToString();
+            txtPrecioProducto.Text = filaActual.Cells[3].Value.ToString();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProductos Pro = new entProductos();
+                Pro.nombreProducto = txtNombreProducto.Text.Trim();
+                Pro.stockProducto = int.Parse(txtStockProducto.Text.Trim());
+                Pro.precioPro = int.Parse(txtPrecioProducto.Text.Trim());
+                logProductos.Instancia.InsertaProductos(Pro);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
         }
     }
 }

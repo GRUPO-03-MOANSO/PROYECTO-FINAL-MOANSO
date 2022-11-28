@@ -60,7 +60,7 @@ namespace CapaDatos
         }
         #endregion listado
 
-      #region insertar
+        #region insertar
         public Boolean InsertaProveedor(entProveedor Pro)
         {
             SqlCommand cmd = null;
