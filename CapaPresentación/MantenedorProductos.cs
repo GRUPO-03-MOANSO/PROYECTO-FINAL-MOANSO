@@ -80,5 +80,13 @@ namespace CapaPresentación
                 MessageBox.Show("Error.." + ex);
             }
         }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtIdProducto.Text = "";
+            txtNombreProducto.Text = "";
+            txtStockProducto.Text = "";
+            txtPrecioProducto.Text = "";
+        }
     }
 }

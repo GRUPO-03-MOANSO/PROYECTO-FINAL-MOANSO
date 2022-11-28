@@ -43,6 +43,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.txtIdP = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListadoProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             this.btnAtrasProductos.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAtrasProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAtrasProductos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAtrasProductos.Location = new System.Drawing.Point(881, 470);
+            this.btnAtrasProductos.Location = new System.Drawing.Point(818, 424);
             this.btnAtrasProductos.Name = "btnAtrasProductos";
             this.btnAtrasProductos.Size = new System.Drawing.Size(127, 57);
             this.btnAtrasProductos.TabIndex = 15;
@@ -77,7 +78,7 @@
             this.btnMostrarProductos.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrarProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMostrarProductos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMostrarProductos.Location = new System.Drawing.Point(482, 471);
+            this.btnMostrarProductos.Location = new System.Drawing.Point(488, 386);
             this.btnMostrarProductos.Name = "btnMostrarProductos";
             this.btnMostrarProductos.Size = new System.Drawing.Size(127, 54);
             this.btnMostrarProductos.TabIndex = 13;
@@ -111,7 +112,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgregar.Location = new System.Drawing.Point(615, 471);
+            this.btnAgregar.Location = new System.Drawing.Point(488, 459);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(127, 57);
             this.btnAgregar.TabIndex = 16;
@@ -124,7 +125,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEliminar.Location = new System.Drawing.Point(748, 471);
+            this.btnEliminar.Location = new System.Drawing.Point(653, 386);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(127, 57);
             this.btnEliminar.TabIndex = 17;
@@ -196,11 +197,25 @@
             this.txtIdP.TabIndex = 24;
             this.txtIdP.Text = "Id Producto";
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLimpiar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLimpiar.Location = new System.Drawing.Point(653, 459);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(127, 57);
+            this.btnLimpiar.TabIndex = 26;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // MantenedorProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1069, 591);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.txtIdP);
             this.Controls.Add(this.txtStockProducto);
@@ -244,5 +259,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Label txtIdP;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
