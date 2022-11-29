@@ -42,8 +42,15 @@ namespace CapaDatos
                 {
                     entProveedor Pro = new entProveedor();
                     Pro.idProveedor = Convert.ToInt32(dr["idProveedor"]);
+                    Pro.rucProveedor = dr["rucProveedor"].ToString();
                     Pro.NomProveedor = dr["NomProveedor"].ToString();
+                    Pro.ApeProveedor = dr["ApeProveedor"].ToString();
                     Pro.TipoProducto = dr["TipoProducto"].ToString();
+                    Pro.direccionProveedor = dr["direccionProveedor"].ToString();
+                    Pro.igvProveedor = dr["igvProveedor"].ToString();
+                    Pro.telefonoProveedor = dr["telefonoProveedor"].ToString();
+                    Pro.emailProveedor = dr["emailProveedor"].ToString();
+                    Pro.fechaProveedor = Convert.ToDateTime(dr["fechaProveedor"]);
                     lista.Add(Pro);
                 }
 
@@ -59,7 +66,7 @@ namespace CapaDatos
             return lista;
         }
         #endregion listado
-
+       
         #region insertar
         public Boolean InsertaProveedor(entProveedor Pro)
         {
@@ -70,8 +77,15 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaProveedor", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@rucProveedor", Pro.rucProveedor);
                 cmd.Parameters.AddWithValue("@NomProveedor", Pro.NomProveedor);
+                cmd.Parameters.AddWithValue("@ApeProveedor", Pro.ApeProveedor);
                 cmd.Parameters.AddWithValue("@TipoProducto", Pro.TipoProducto);
+                cmd.Parameters.AddWithValue("@direccionProveedor", Pro.direccionProveedor);
+                cmd.Parameters.AddWithValue("@igvProveedor", Pro.igvProveedor);
+                cmd.Parameters.AddWithValue("@telefonoProveedor", Pro.telefonoProveedor);
+                cmd.Parameters.AddWithValue("@emailProveedor", Pro.emailProveedor);
+                cmd.Parameters.AddWithValue("@fechaProveedor", Pro.fechaProveedor);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -87,7 +101,7 @@ namespace CapaDatos
             return inserta;
         }
         #endregion insertar
-
+        
         #region editar
         public Boolean EditaProveedor(entProveedor Pro)
         {
@@ -99,8 +113,15 @@ namespace CapaDatos
                 cmd = new SqlCommand("spEditaProveedor", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idProveedor", Pro.idProveedor);
+                cmd.Parameters.AddWithValue("@rucProveedor", Pro.rucProveedor);
                 cmd.Parameters.AddWithValue("@NomProveedor", Pro.NomProveedor);
+                cmd.Parameters.AddWithValue("@ApeProveedor", Pro.TipoProducto);
                 cmd.Parameters.AddWithValue("@TipoProducto", Pro.TipoProducto);
+                cmd.Parameters.AddWithValue("@direccionProveedor", Pro.direccionProveedor);
+                cmd.Parameters.AddWithValue("@igvProveedor", Pro.igvProveedor);
+                cmd.Parameters.AddWithValue("@telefonoProveedor", Pro.telefonoProveedor);
+                cmd.Parameters.AddWithValue("@emailProveedor", Pro.emailProveedor);
+                cmd.Parameters.AddWithValue("@fechaProveedor", Pro.fechaProveedor);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -116,5 +137,41 @@ namespace CapaDatos
             return edita;
         }
         #endregion editar
+
+        #region eliminar
+        public Boolean EliminarProveedor(entProveedor Pro)
+        {
+            SqlCommand cmd = null;
+            Boolean elimina = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarProveedor", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idProveedor", Pro.idProveedor);
+                cmd.Parameters.AddWithValue("@rucProveedor", Pro.rucProveedor);
+                cmd.Parameters.AddWithValue("@NomProveedor", Pro.NomProveedor);
+                cmd.Parameters.AddWithValue("@ApeProveedor", Pro.ApeProveedor);
+                cmd.Parameters.AddWithValue("@TipoProducto", Pro.TipoProducto);
+                cmd.Parameters.AddWithValue("@direccionProveedor", Pro.direccionProveedor);
+                cmd.Parameters.AddWithValue("@igvProveedor", Pro.igvProveedor);
+                cmd.Parameters.AddWithValue("@telefonoProveedor", Pro.telefonoProveedor);
+                cmd.Parameters.AddWithValue("@emailProveedor", Pro.emailProveedor);
+                cmd.Parameters.AddWithValue("@fechaProveedor", Pro.fechaProveedor);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    elimina = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return elimina;
+        }
+        #endregion eliminar
     }
 }

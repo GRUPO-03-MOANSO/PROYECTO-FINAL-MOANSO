@@ -43,5 +43,9 @@ namespace CapaLogica
         {
             datProveedor.Instancia.EditaProveedor(Pro);
         }
+        public void EliminarProveedor(entProveedor Pro)
+        {
+            datProveedor.Instancia.EliminarProveedor(Pro);
+        }
     }
 }

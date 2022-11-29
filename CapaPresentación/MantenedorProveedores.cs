@@ -29,8 +29,15 @@ namespace CapaPresentación {
             try
             {
                 entProveedor Pro = new entProveedor();
+                Pro.rucProveedor = txt_ruc.Text.Trim();
                 Pro.NomProveedor = txt_nombre.Text.Trim();
+                Pro.ApeProveedor = txt_apellido.Text.Trim();
                 Pro.TipoProducto = cbx_tipo.Text.Trim();
+                Pro.direccionProveedor = txt_direccion.Text.Trim();
+                Pro.igvProveedor = txt_igv.Text.Trim();
+                Pro.telefonoProveedor = txt_telefono.Text.Trim();
+                Pro.emailProveedor = txt_email.Text.Trim();
+                Pro.fechaProveedor = dtp_proveedor.Value;
                 logProveedor.Instancia.InsertaProveedor(Pro);
             }
             catch (Exception ex)
@@ -52,8 +59,15 @@ namespace CapaPresentación {
         {
             DataGridViewRow filaActual = dgv_proveedores.Rows[e.RowIndex];
             txt_idproveedor.Text = filaActual.Cells[0].Value.ToString();
-            txt_nombre.Text = filaActual.Cells[1].Value.ToString();
-            cbx_tipo.Text = filaActual.Cells[2].Value.ToString();
+            txt_ruc.Text = filaActual.Cells[1].Value.ToString();
+            txt_nombre.Text = filaActual.Cells[2].Value.ToString();
+            txt_apellido.Text = filaActual.Cells[3].Value.ToString();
+            cbx_tipo.Text = filaActual.Cells[4].Value.ToString();
+            txt_direccion.Text = filaActual.Cells[5].Value.ToString();
+            txt_igv.Text = filaActual.Cells[6].Value.ToString();
+            txt_telefono.Text = filaActual.Cells[7].Value.ToString();
+            txt_email.Text = filaActual.Cells[8].Value.ToString();
+            dtp_proveedor.Text = filaActual.Cells[9].Value.ToString();
         }
 
         private void txt_idproveedor_TextChanged(object sender, EventArgs e)
@@ -71,14 +85,21 @@ namespace CapaPresentación {
 
         }
 
-        private void btn_editar_Click(object sender, EventArgs e)
+      private void btn_editar_Click(object sender, EventArgs e)
         {
             try
             {
                 entProveedor Pro = new entProveedor();
                 Pro.idProveedor = int.Parse(txt_idproveedor.Text.Trim());
+                Pro.rucProveedor = txt_ruc.Text.Trim();
                 Pro.NomProveedor = txt_nombre.Text.Trim();
+                Pro.ApeProveedor = txt_apellido.Text.Trim();
                 Pro.TipoProducto = cbx_tipo.Text.Trim();
+                Pro.direccionProveedor = txt_direccion.Text.Trim();
+                Pro.igvProveedor = txt_igv.Text.Trim();
+                Pro.telefonoProveedor = txt_telefono.Text.Trim();
+                Pro.emailProveedor = txt_email.Text.Trim();
+                Pro.fechaProveedor = dtp_proveedor.Value;
                 logProveedor.Instancia.EditaProveedor(Pro);
             }
             catch (Exception ex)
@@ -86,6 +107,22 @@ namespace CapaPresentación {
                 MessageBox.Show("Error.." + ex);
             }
             listaProveedor();
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            entProveedor Pro = new entProveedor();
+            Pro.idProveedor = int.Parse(txt_idproveedor.Text.Trim());
+            Pro.rucProveedor = txt_ruc.Text.Trim();
+            Pro.NomProveedor = txt_nombre.Text.Trim();
+            Pro.ApeProveedor = txt_apellido.Text.Trim();
+            Pro.TipoProducto = cbx_tipo.Text.Trim();
+            Pro.direccionProveedor = txt_direccion.Text.Trim();
+            Pro.igvProveedor = txt_igv.Text.Trim();
+            Pro.telefonoProveedor = txt_telefono.Text.Trim();
+            Pro.emailProveedor = txt_email.Text.Trim();
+            Pro.fechaProveedor = dtp_proveedor.Value;
+            logProveedor.Instancia.EliminarProveedor(Pro);
         }
     }
 }

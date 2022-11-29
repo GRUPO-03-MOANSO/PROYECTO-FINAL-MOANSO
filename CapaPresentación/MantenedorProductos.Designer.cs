@@ -53,9 +53,10 @@
             this.btnAtrasProductos.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAtrasProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAtrasProductos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAtrasProductos.Location = new System.Drawing.Point(818, 424);
+            this.btnAtrasProductos.Location = new System.Drawing.Point(1091, 522);
+            this.btnAtrasProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAtrasProductos.Name = "btnAtrasProductos";
-            this.btnAtrasProductos.Size = new System.Drawing.Size(127, 57);
+            this.btnAtrasProductos.Size = new System.Drawing.Size(169, 70);
             this.btnAtrasProductos.TabIndex = 15;
             this.btnAtrasProductos.Text = "Regresar";
             this.btnAtrasProductos.UseVisualStyleBackColor = false;
@@ -65,10 +66,11 @@
             // 
             this.dgvListadoProductos.AllowUserToOrderColumns = true;
             this.dgvListadoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListadoProductos.Location = new System.Drawing.Point(12, 112);
+            this.dgvListadoProductos.Location = new System.Drawing.Point(16, 138);
+            this.dgvListadoProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvListadoProductos.Name = "dgvListadoProductos";
             this.dgvListadoProductos.RowHeadersWidth = 51;
-            this.dgvListadoProductos.Size = new System.Drawing.Size(434, 450);
+            this.dgvListadoProductos.Size = new System.Drawing.Size(579, 554);
             this.dgvListadoProductos.TabIndex = 14;
             this.dgvListadoProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListadoProductos_CellClick);
             this.dgvListadoProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListadoProductos_CellContentClick);
@@ -78,9 +80,10 @@
             this.btnMostrarProductos.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnMostrarProductos.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMostrarProductos.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnMostrarProductos.Location = new System.Drawing.Point(488, 386);
+            this.btnMostrarProductos.Location = new System.Drawing.Point(651, 475);
+            this.btnMostrarProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMostrarProductos.Name = "btnMostrarProductos";
-            this.btnMostrarProductos.Size = new System.Drawing.Size(127, 54);
+            this.btnMostrarProductos.Size = new System.Drawing.Size(169, 66);
             this.btnMostrarProductos.TabIndex = 13;
             this.btnMostrarProductos.Text = "Mostrar";
             this.btnMostrarProductos.UseVisualStyleBackColor = false;
@@ -91,9 +94,10 @@
             this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.label4);
             this.panel1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Location = new System.Drawing.Point(-55, -1);
+            this.panel1.Location = new System.Drawing.Point(-73, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1125, 92);
+            this.panel1.Size = new System.Drawing.Size(1500, 113);
             this.panel1.TabIndex = 12;
             // 
             // label4
@@ -101,9 +105,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Subheading", 22.2F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(192, 25);
+            this.label4.Location = new System.Drawing.Point(256, 31);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(309, 43);
+            this.label4.Size = new System.Drawing.Size(382, 53);
             this.label4.TabIndex = 0;
             this.label4.Text = "Listado de Productos";
             // 
@@ -112,9 +117,10 @@
             this.btnAgregar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnAgregar.Location = new System.Drawing.Point(488, 459);
+            this.btnAgregar.Location = new System.Drawing.Point(651, 565);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(127, 57);
+            this.btnAgregar.Size = new System.Drawing.Size(169, 70);
             this.btnAgregar.TabIndex = 16;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -125,9 +131,10 @@
             this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnEliminar.Location = new System.Drawing.Point(653, 386);
+            this.btnEliminar.Location = new System.Drawing.Point(871, 475);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(127, 57);
+            this.btnEliminar.Size = new System.Drawing.Size(169, 70);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -136,75 +143,93 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(708, 162);
+            this.label1.Font = new System.Drawing.Font("Sitka Subheading", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(942, 184);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.Size = new System.Drawing.Size(219, 33);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Nombre Producto";
+            this.label1.Text = "Nombre Producto :";
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Location = new System.Drawing.Point(711, 190);
+            this.txtNombreProducto.Location = new System.Drawing.Point(948, 234);
+            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreProducto.Size = new System.Drawing.Size(205, 22);
             this.txtNombreProducto.TabIndex = 19;
             // 
             // txtPrecioProducto
             // 
-            this.txtPrecioProducto.Location = new System.Drawing.Point(711, 277);
+            this.txtPrecioProducto.Location = new System.Drawing.Point(948, 341);
+            this.txtPrecioProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrecioProducto.Name = "txtPrecioProducto";
-            this.txtPrecioProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtPrecioProducto.Size = new System.Drawing.Size(213, 22);
             this.txtPrecioProducto.TabIndex = 21;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(708, 249);
+            this.label2.Font = new System.Drawing.Font("Sitka Subheading", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label2.Location = new System.Drawing.Point(942, 294);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.Size = new System.Drawing.Size(200, 33);
             this.label2.TabIndex = 20;
-            this.label2.Text = "Precio Producto";
+            this.label2.Text = "Precio Producto :";
             // 
             // txtStockProducto
             // 
-            this.txtStockProducto.Location = new System.Drawing.Point(515, 277);
+            this.txtStockProducto.Location = new System.Drawing.Point(687, 341);
+            this.txtStockProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStockProducto.Name = "txtStockProducto";
-            this.txtStockProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtStockProducto.Size = new System.Drawing.Size(173, 22);
             this.txtStockProducto.TabIndex = 23;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(512, 249);
+            this.label3.Font = new System.Drawing.Font("Sitka Subheading", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label3.Location = new System.Drawing.Point(681, 294);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.Size = new System.Drawing.Size(190, 33);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Stock Producto";
+            this.label3.Text = "Stock Producto :";
             // 
             // txtIdProducto
             // 
-            this.txtIdProducto.Location = new System.Drawing.Point(515, 190);
+            this.txtIdProducto.Enabled = false;
+            this.txtIdProducto.Location = new System.Drawing.Point(687, 234);
+            this.txtIdProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(100, 20);
+            this.txtIdProducto.Size = new System.Drawing.Size(100, 22);
             this.txtIdProducto.TabIndex = 25;
             // 
             // txtIdP
             // 
             this.txtIdP.AutoSize = true;
-            this.txtIdP.Location = new System.Drawing.Point(512, 162);
+            this.txtIdP.Font = new System.Drawing.Font("Sitka Subheading", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txtIdP.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.txtIdP.Location = new System.Drawing.Point(681, 184);
+            this.txtIdP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtIdP.Name = "txtIdP";
-            this.txtIdP.Size = new System.Drawing.Size(62, 13);
+            this.txtIdP.Size = new System.Drawing.Size(154, 33);
             this.txtIdP.TabIndex = 24;
-            this.txtIdP.Text = "Id Producto";
+            this.txtIdP.Text = "Id Producto :";
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLimpiar.Location = new System.Drawing.Point(653, 459);
+            this.btnLimpiar.Location = new System.Drawing.Point(871, 565);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(127, 57);
+            this.btnLimpiar.Size = new System.Drawing.Size(169, 70);
             this.btnLimpiar.TabIndex = 26;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -212,9 +237,9 @@
             // 
             // MantenedorProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 591);
+            this.ClientSize = new System.Drawing.Size(1425, 727);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.txtIdP);
@@ -231,6 +256,7 @@
             this.Controls.Add(this.btnMostrarProductos);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MantenedorProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenedorProductos";
