@@ -32,6 +32,10 @@ namespace CapaLogica
         {
             datVenta.Instancia.InsertaVenta(e);
         }
+        public DataTable BuscarVenta(int id)
+        {
+            return datVenta.Instancia.BuscarVenta(id);
+        }
         #endregion metodos
 
 

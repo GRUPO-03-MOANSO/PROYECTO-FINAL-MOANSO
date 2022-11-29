@@ -31,5 +31,13 @@ namespace CapaLogica
         {
             datProductos.Instancia.EliminaProducto(Pro);
         }
+        public List<entProductos> ListarProductos()
+        {
+            return datProductos.Instancia.ListaProductos();
+        }
+        public int buscarPrecio(int id)
+        {
+            return datProductos.Instancia.busquedaPrecio(id);
+        }
     }
 }

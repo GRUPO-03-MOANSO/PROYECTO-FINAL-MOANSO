@@ -14,6 +14,7 @@ namespace CapaEntidad
         public int id_producto { get; set; }
         public string tipo_pago { get; set; }
         public int cantidad { get; set; }
+        public int importe_venta { get; set; }
 
     }
 }

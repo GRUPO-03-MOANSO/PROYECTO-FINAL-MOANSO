@@ -11,14 +11,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace CapaPresentación {
-    public partial class CoreVenta : Form {
+namespace CapaPresentación
+{
+    public partial class CoreVenta : Form
+    {
         public CoreVenta()
         {
             InitializeComponent();
             listarVentas();
         }
-        private void label3_Click(object sender, EventArgs e)  { }
+        private void label3_Click(object sender, EventArgs e) { }
 
         private void mostrar()
         {
@@ -40,11 +42,11 @@ namespace CapaPresentación {
             try
             {
                 entVenta venta = new entVenta();
-                venta.id_ventas = Convert.ToInt32(txt_idventas_P.Text);
                 venta.cantidad = Convert.ToInt32(txt_cantidad_P.Text);
                 venta.id_producto = cb_producto.SelectedIndex;
                 venta.tipo_pago = cb_tipopago.Text;
                 venta.fecha_venta = Convert.ToDateTime(dtp_fecha.Value);
+                venta.importe_venta = (Convert.ToInt32(txt_cantidad_P.Text) * logProductos.Instancia.buscarPrecio(cb_producto.SelectedIndex));
                 logVenta.Instancia.InsertaVenta(venta);
                 listarVentas();
             }
@@ -55,7 +57,7 @@ namespace CapaPresentación {
 
         }
         private void CoreVenta_Load(object sender, EventArgs e)
-        {   
+        {
         }
         private void btn_mostrar_ventasP_Click(object sender, EventArgs e)
         {
@@ -64,7 +66,7 @@ namespace CapaPresentación {
         private void listarVentas()
         {
             dgv_ventas.DataSource = logVenta.Instancia.ListaVentas();
-            cb_producto.DataSource = productos_cb();
+            cb_producto.DataSource = logProductos.Instancia.ListarProductos();
             cb_producto.DisplayMember = "nombreProducto";
             cb_producto.ValueMember = "idProducto";
         }
@@ -89,6 +91,18 @@ namespace CapaPresentación {
         private void txt_s_productoP_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_calcular_Click(object sender, EventArgs e)
+        {
+            int cantidad = Convert.ToInt32(txt_cantidad_P.Text);
+            int precio = logProductos.Instancia.buscarPrecio(cb_producto.SelectedIndex);
+            MessageBox.Show("El Monto total de la venta es: " + precio * cantidad);
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            dgv_ventas.DataSource = logVenta.Instancia.BuscarVenta(Convert.ToInt32(txt_buscar.Text));
         }
     }
 }

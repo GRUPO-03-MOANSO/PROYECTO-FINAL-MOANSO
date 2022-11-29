@@ -42,7 +42,7 @@ namespace CapaDatos
                 {
                     entProductos Pro = new entProductos();
                     Pro.idProducto = Convert.ToInt32(dr["idProducto"]);
-                    Pro.nombreProducto = dr["NomProveedor"].ToString();
+                    Pro.nombreProducto = dr["nombreProducto"].ToString();
                     Pro.stockProducto = Convert.ToInt32(dr["stockProducto"]);
                     Pro.precioPro = Convert.ToInt32(dr["precioPro"]);
                     lista.Add(Pro);
@@ -59,6 +59,35 @@ namespace CapaDatos
             }
             return lista;
         }
+
+        public int busquedaPrecio(int id)
+        {
+            SqlCommand cmd = null;
+            int precio = -1;
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("pa_buscarPrecio", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_producto", id);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                precio = Convert.ToInt32(dr["precioPro"]);
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return precio;
+        }
+
         #endregion listado
 
         #region inserta
@@ -73,7 +102,7 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@nombreProducto", Pro.nombreProducto);
                 cmd.Parameters.AddWithValue("@stockProducto", Pro.stockProducto);
-                cmd.Parameters.AddWithValue("@precioPro", Pro.precioPro);               
+                cmd.Parameters.AddWithValue("@precioPro", Pro.precioPro);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -86,8 +115,8 @@ namespace CapaDatos
                 throw e;
             }
             finally
-            { 
-                cmd.Connection.Close(); 
+            {
+                cmd.Connection.Close();
             }
             return inserta;
         }
