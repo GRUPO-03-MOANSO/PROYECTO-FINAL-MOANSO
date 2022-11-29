@@ -45,6 +45,15 @@ namespace CapaLogica
         {
             datMantenimiento.Instancia.EditarMantenimiento(e);
         }
+
+        public DataTable BuscarMantenimiento(int id)
+        {
+            return datMantenimiento.Instancia.BuscarMantenimiento(id);
+        }
+        public void EliminarMantenimiento(entMantenimiento Man)
+        {
+            datMantenimiento.Instancia.EliminarMantenimiento(Man);
+        }
         #endregion metodos
 
 

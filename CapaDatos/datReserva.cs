@@ -44,8 +44,9 @@ namespace CapaDatos
                     entReserva Cli = new entReserva();
                     Cli.idReserva = Convert.ToInt32(dr["idReserva"]);
                     Cli.fecha = Convert.ToDateTime(dr["fecha"]); ;
-                    Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
-                    Cli.idProducto= Convert.ToInt32(dr["idProducto"]);
+                    Cli.idClientes = Convert.ToInt32(dr["idClientes"]);
+                    Cli.idProducto = Convert.ToInt32(dr["idProducto"]);
+                    Cli.estReserva = Convert.ToBoolean(dr["estReserva"]);
                     lista.Add(Cli);
                 }
 
@@ -73,8 +74,9 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idReserva", Cli.idReserva);
                 cmd.Parameters.AddWithValue("@fecha", Cli.fecha);
-                cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
+                cmd.Parameters.AddWithValue("@idClientes", Cli.idClientes);
                 cmd.Parameters.AddWithValue("@idProducto", Cli.idProducto);
+                cmd.Parameters.AddWithValue("@estReserva", Cli.estReserva);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -101,8 +103,9 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idReserva", Cli.idReserva);
                 cmd.Parameters.AddWithValue("@fecha", Cli.fecha);
-                cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
+                cmd.Parameters.AddWithValue("@idClientes", Cli.idClientes);
                 cmd.Parameters.AddWithValue("@idProducto", Cli.idProducto);
+                cmd.Parameters.AddWithValue("@estReserva", Cli.estReserva);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -116,6 +119,59 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return edita;
+        }
+        public Boolean EliminarReserva(entReserva Man)
+        {
+            SqlCommand cmd = null;
+            Boolean elimina = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarReserva", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idReserva", Man.idReserva);
+                cmd.Parameters.AddWithValue("@fecha", Man.fecha);
+                cmd.Parameters.AddWithValue("@idClientes", Man.idClientes);
+                cmd.Parameters.AddWithValue("@idProducto", Man.idProducto);
+                cmd.Parameters.AddWithValue("@estReserva", Man.estReserva);
+
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    elimina = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return elimina;
+        }
+        public DataTable BuscarReserva(int id)
+        {
+            SqlCommand cmd = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("pa_buscarReserva", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idReserva", id);
+                cn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return dt;
         }
         #endregion metodos
     }

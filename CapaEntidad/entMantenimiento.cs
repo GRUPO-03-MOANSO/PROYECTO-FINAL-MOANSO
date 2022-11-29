@@ -17,8 +17,8 @@ namespace CapaEntidad
 
         public string precio { get; set; }
 
-        public int idCliente { get; set; }
+        public int idClientes { get; set; }
 
-        public int idEmpleado { get; set; }
+
     }
 }

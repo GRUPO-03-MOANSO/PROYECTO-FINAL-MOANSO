@@ -10,11 +10,13 @@ namespace CapaEntidad
     {
         public int idReserva { get; set; }
 
-        public DateTime fecha{ get; set; }
+        public DateTime fecha { get; set; }
 
-        public int idCliente { get; set; }
-        
-        public int idProducto{ get; set; }
+        public int idClientes { get; set; }
+
+        public int idProducto { get; set; }
+
+        public Boolean estReserva { get; set; }
 
     }
 }

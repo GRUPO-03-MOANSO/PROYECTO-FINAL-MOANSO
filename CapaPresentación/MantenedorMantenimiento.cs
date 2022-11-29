@@ -21,8 +21,8 @@ namespace CapaPresentación
         {
             InitializeComponent();
             listarMantenimiento();
-            LLenarComboxCliente();  
-            LLenarComboxEmpleado();
+            LLenarComboxCliente();
+
         }
 
         public void listarMantenimiento()
@@ -34,47 +34,28 @@ namespace CapaPresentación
         {
             cmbIDcliente.DataSource = logCliente.Instancia.ListarCliente();
 
-            cmbIDcliente.DisplayMember = "idCliente";
-            cmbIDcliente.ValueMember = "idCliente";
+            cmbIDcliente.DisplayMember = "idClientes";
+            cmbIDcliente.ValueMember = "idClientes";
         }
 
-        private void LLenarComboxEmpleado()
-        {
-            cmbIDempleado.DataSource = logEmpleado.Instancia.ListaEmpleados();
 
-            cmbIDempleado.DisplayMember = "idEmpleado";
-            cmbIDempleado.ValueMember = "idEmpleado";
-        }
         private void btn_nuevo_clienteM_Click(object sender, EventArgs e)
         {
             txtIDmantenimiento.Text = "";
             txtDescripcion.Text = "";
-            txtPrecio.Text ="";
+            txtPrecio.Text = "";
             cmbIDcliente.ResetText();
-            cmbIDempleado.ResetText();  
+
         }
 
-        private void btn_agregar_clienteM_Click(object sender, EventArgs e)
+      
+
+        private void dvgMantenimiento_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            try
-            {
-                entMantenimiento c = new entMantenimiento();
-                c.idMantenimiento = int.Parse(txtIDmantenimiento.Text.Trim());
-                c.fecha = dtFecha.Value;
-                c.descripcion = txtDescripcion.Text.Trim();
-                c.precio = txtPrecio.Text.Trim();
-                c.idCliente = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
-                c.idEmpleado = int.Parse(Convert.ToString(cmbIDempleado.SelectedValue));
-                logMantenimiento.Instancia.InsertarMantenimiento(c);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error.." + ex);
-            }
-            listarMantenimiento();
+
         }
 
-        private void btn_mostrar_clienteM_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection cn = Conexion.Instancia.Conectar();
             SqlCommand comando = new SqlCommand("Select * from Mantenimiento", cn);
@@ -85,7 +66,7 @@ namespace CapaPresentación
             dvgMantenimiento.DataSource = tabla;
         }
 
-        private void btn_editar_clienteM_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -94,8 +75,28 @@ namespace CapaPresentación
                 c.fecha = dtFecha.Value;
                 c.descripcion = txtDescripcion.Text.Trim();
                 c.precio = txtPrecio.Text.Trim();
-                c.idCliente = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
-                c.idEmpleado = int.Parse(Convert.ToString(cmbIDempleado.SelectedValue));
+                c.idClientes = cmbIDcliente.SelectedIndex;
+
+                logMantenimiento.Instancia.InsertarMantenimiento(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            listarMantenimiento();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entMantenimiento c = new entMantenimiento();
+                c.idMantenimiento = int.Parse(txtIDmantenimiento.Text.Trim());
+                c.fecha = dtFecha.Value;
+                c.descripcion = txtDescripcion.Text.Trim();
+                c.precio = txtPrecio.Text.Trim();
+                c.idClientes = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
+
                 logMantenimiento.Instancia.EditarMantenimiento(c);
             }
             catch (Exception ex)
@@ -105,10 +106,26 @@ namespace CapaPresentación
             listarMantenimiento();
         }
 
-        private void btn_cancelar_clienteM_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Dispose();
         }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
+        {
+            entMantenimiento Pro = new entMantenimiento();
+            Pro.idMantenimiento = int.Parse(txtIDmantenimiento.Text.Trim());
+            Pro.fecha = dtFecha.Value;
+            Pro.descripcion = txtDescripcion.Text.Trim();
+            Pro.precio = txtPrecio.Text.Trim();
+            logMantenimiento.Instancia.EliminarMantenimiento(Pro);
+            listarMantenimiento();
+        }
+
+        private void btnBuscarMantenimiento_Click_1(object sender, EventArgs e)
+        {
+            dvgMantenimiento.DataSource = logMantenimiento.Instancia.BuscarMantenimiento(Convert.ToInt32(txt_buscar.Text));
+        }
     }
-    
+
 }

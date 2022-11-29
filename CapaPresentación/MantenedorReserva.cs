@@ -50,14 +50,14 @@ namespace CapaPresentación
         {
             cmbIDcliente.DataSource = logCliente.Instancia.ListarCliente();
 
-            cmbIDcliente.DisplayMember = "idCliente";
-            cmbIDcliente.ValueMember = "idCliente";
+            cmbIDcliente.DisplayMember = "idClientes";
+            cmbIDcliente.ValueMember = "idClientes";
         }
         private void btn_nuevo_clienteM_Click(object sender, EventArgs e)
         {
             txtIDreserva.Text = "";
             cmbIDcliente.ResetText();
-            cmbIDProducto.ResetText();  
+            cmbIDProducto.ResetText();
         }
 
         private void btn_mostrar_clienteM_Click(object sender, EventArgs e)
@@ -78,9 +78,9 @@ namespace CapaPresentación
                 entReserva c = new entReserva();
                 c.idReserva = int.Parse(txtIDreserva.Text.Trim());
                 c.fecha = dtFecha.Value;
-                c.idCliente= int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
+                c.idClientes = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
                 c.idProducto = int.Parse(Convert.ToString(cmbIDProducto.SelectedValue));
-
+                c.estReserva = cbkEstadoReserva.Checked;
                 logReserva.Instancia.InsertarReserva(c);
             }
             catch (Exception ex)
@@ -97,8 +97,9 @@ namespace CapaPresentación
                 entReserva c = new entReserva();
                 c.idReserva = int.Parse(txtIDreserva.Text.Trim());
                 c.fecha = dtFecha.Value;
-                c.idCliente = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
+                c.idClientes = int.Parse(Convert.ToString(cmbIDcliente.SelectedValue));
                 c.idProducto = int.Parse(Convert.ToString(cmbIDProducto.SelectedValue));
+                c.estReserva = cbkEstadoReserva.Checked;
                 logReserva.Instancia.EditarReserva(c);
             }
             catch (Exception ex)
@@ -111,6 +112,21 @@ namespace CapaPresentación
         private void btn_cancelar_clienteM_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            entReserva Pro = new entReserva();
+            Pro.idReserva = int.Parse(txtIDreserva.Text.Trim());
+            Pro.fecha = dtFecha.Value;
+            Pro.estReserva = cbkEstadoReserva.Checked;
+            logReserva.Instancia.EliminarReserva(Pro);
+            listarReserva();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            dgvReserva.DataSource = logReserva.Instancia.BuscarReserva(Convert.ToInt32(txt_buscar.Text));
         }
     }
 }

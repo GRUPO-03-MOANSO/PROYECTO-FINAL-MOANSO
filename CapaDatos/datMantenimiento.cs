@@ -11,9 +11,9 @@ namespace CapaDatos
     public class datMantenimiento
     {
         #region sigleton
-        
+
         private static readonly datMantenimiento _instancia = new datMantenimiento();
-        
+
         public static datMantenimiento Instancia
         {
             get
@@ -43,8 +43,8 @@ namespace CapaDatos
                     Cli.fecha = Convert.ToDateTime(dr["fecha"]); ;
                     Cli.descripcion = dr["descripcion"].ToString();
                     Cli.precio = dr["precio"].ToString();
-                    Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
-                    Cli.idEmpleado = Convert.ToInt32(dr["idEmpleado"]);
+                    Cli.idClientes = Convert.ToInt32(dr["idClientes"]);
+
                     lista.Add(Cli);
                 }
 
@@ -74,8 +74,8 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@fecha", Cli.fecha);
                 cmd.Parameters.AddWithValue("@descripcion", Cli.descripcion);
                 cmd.Parameters.AddWithValue("@precio", Cli.precio);
-                cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
-                cmd.Parameters.AddWithValue("@idEmpleado", Cli.idEmpleado);
+                cmd.Parameters.AddWithValue("@idClientes", Cli.idClientes);
+
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -104,8 +104,8 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@fecha", Cli.fecha);
                 cmd.Parameters.AddWithValue("@descripcion", Cli.descripcion);
                 cmd.Parameters.AddWithValue("@precio", Cli.precio);
-                cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
-                cmd.Parameters.AddWithValue("@idEmpleado", Cli.idEmpleado);
+                cmd.Parameters.AddWithValue("@idClientes", Cli.idClientes);
+
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -119,6 +119,61 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return edita;
+        }
+
+        public DataTable BuscarMantenimiento(int id)
+        {
+            SqlCommand cmd = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("pa_buscarMantenimiento", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idMantenimiento", id);
+                cn.Open();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return dt;
+        }
+
+        public Boolean EliminarMantenimiento(entMantenimiento Man)
+        {
+            SqlCommand cmd = null;
+            Boolean elimina = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarMantenimiento", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idMantenimiento", Man.idMantenimiento);
+                cmd.Parameters.AddWithValue("@fecha", Man.fecha);
+                cmd.Parameters.AddWithValue("@descripcion", Man.descripcion);
+                cmd.Parameters.AddWithValue("@precio", Man.precio);
+                cmd.Parameters.AddWithValue("@idClientes", Man.idClientes);
+
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    elimina = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return elimina;
         }
         #endregion metodos
     }

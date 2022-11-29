@@ -6,12 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CapaDatos;
+using System.Data;
+
 namespace CapaLogica
 {
-    public  class logReserva
+    public class logReserva
     {
         #region sigleton
-       
+
         private static readonly logReserva _instancia = new logReserva();
         //privado para evitar la instanciación directa
         public static logReserva Instancia
@@ -39,6 +41,14 @@ namespace CapaLogica
         public void EditarReserva(entReserva e)
         {
             datReserva.Instancia.EditarReserva(e);
+        }
+        public void EliminarReserva(entReserva e)
+        {
+            datReserva.Instancia.EliminarReserva(e);
+        }
+        public DataTable BuscarReserva(int id)
+        {
+            return datReserva.Instancia.BuscarReserva(id);
         }
         #endregion metodos
 

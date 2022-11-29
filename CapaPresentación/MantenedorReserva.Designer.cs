@@ -46,6 +46,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbIDProducto = new System.Windows.Forms.ComboBox();
             this.cmbIDcliente = new System.Windows.Forms.ComboBox();
+            this.cbkEstadoReserva = new System.Windows.Forms.CheckBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.txt_buscar = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -54,7 +58,7 @@
             // dtFecha
             // 
             this.dtFecha.Location = new System.Drawing.Point(560, 303);
-            this.dtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtFecha.Margin = new System.Windows.Forms.Padding(2);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(236, 20);
             this.dtFecha.TabIndex = 58;
@@ -102,7 +106,7 @@
             this.btn_cancelar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_cancelar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancelar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_cancelar_clienteM.Location = new System.Drawing.Point(779, 430);
+            this.btn_cancelar_clienteM.Location = new System.Drawing.Point(38, 638);
             this.btn_cancelar_clienteM.Name = "btn_cancelar_clienteM";
             this.btn_cancelar_clienteM.Size = new System.Drawing.Size(94, 34);
             this.btn_cancelar_clienteM.TabIndex = 51;
@@ -115,7 +119,7 @@
             this.btn_editar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_editar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_editar_clienteM.Location = new System.Drawing.Point(613, 430);
+            this.btn_editar_clienteM.Location = new System.Drawing.Point(38, 548);
             this.btn_editar_clienteM.Name = "btn_editar_clienteM";
             this.btn_editar_clienteM.Size = new System.Drawing.Size(100, 34);
             this.btn_editar_clienteM.TabIndex = 50;
@@ -128,7 +132,7 @@
             this.btn_agregar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_agregar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_agregar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_agregar_clienteM.Location = new System.Drawing.Point(466, 430);
+            this.btn_agregar_clienteM.Location = new System.Drawing.Point(46, 495);
             this.btn_agregar_clienteM.Name = "btn_agregar_clienteM";
             this.btn_agregar_clienteM.Size = new System.Drawing.Size(83, 34);
             this.btn_agregar_clienteM.TabIndex = 49;
@@ -141,7 +145,7 @@
             this.btn_mostrar_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_mostrar_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mostrar_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_mostrar_clienteM.Location = new System.Drawing.Point(326, 430);
+            this.btn_mostrar_clienteM.Location = new System.Drawing.Point(38, 442);
             this.btn_mostrar_clienteM.Name = "btn_mostrar_clienteM";
             this.btn_mostrar_clienteM.Size = new System.Drawing.Size(93, 34);
             this.btn_mostrar_clienteM.TabIndex = 48;
@@ -154,7 +158,7 @@
             this.btn_nuevo_clienteM.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn_nuevo_clienteM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nuevo_clienteM.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_nuevo_clienteM.Location = new System.Drawing.Point(186, 430);
+            this.btn_nuevo_clienteM.Location = new System.Drawing.Point(38, 402);
             this.btn_nuevo_clienteM.Name = "btn_nuevo_clienteM";
             this.btn_nuevo_clienteM.Size = new System.Drawing.Size(91, 34);
             this.btn_nuevo_clienteM.TabIndex = 47;
@@ -228,11 +232,59 @@
             this.cmbIDcliente.Size = new System.Drawing.Size(236, 21);
             this.cmbIDcliente.TabIndex = 74;
             // 
+            // cbkEstadoReserva
+            // 
+            this.cbkEstadoReserva.AutoSize = true;
+            this.cbkEstadoReserva.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.cbkEstadoReserva.Location = new System.Drawing.Point(679, 354);
+            this.cbkEstadoReserva.Name = "cbkEstadoReserva";
+            this.cbkEstadoReserva.Size = new System.Drawing.Size(117, 17);
+            this.cbkEstadoReserva.TabIndex = 79;
+            this.cbkEstadoReserva.Text = "Estado de Reserva";
+            this.cbkEstadoReserva.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEliminar.Location = new System.Drawing.Point(38, 598);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(91, 34);
+            this.btnEliminar.TabIndex = 80;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // txt_buscar
+            // 
+            this.txt_buscar.Location = new System.Drawing.Point(461, 442);
+            this.txt_buscar.Name = "txt_buscar";
+            this.txt_buscar.Size = new System.Drawing.Size(169, 20);
+            this.txt_buscar.TabIndex = 81;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnBuscar.Location = new System.Drawing.Point(735, 442);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(91, 34);
+            this.btnBuscar.TabIndex = 82;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // MantenedorReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 684);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.txt_buscar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.cbkEstadoReserva);
             this.Controls.Add(this.cmbIDcliente);
             this.Controls.Add(this.cmbIDProducto);
             this.Controls.Add(this.panel1);
@@ -249,7 +301,7 @@
             this.Controls.Add(this.txtIDreserva);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorReserva";
             this.Text = "MantenedorReserva";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
@@ -280,5 +332,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbIDProducto;
         private System.Windows.Forms.ComboBox cmbIDcliente;
+        private System.Windows.Forms.CheckBox cbkEstadoReserva;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.TextBox txt_buscar;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
